@@ -4,13 +4,6 @@ import CrudTabledata from "./CrudTabledata";
 const Tables = ({ data}) => {
   return (
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Nombre</th>
-          </tr>
-        </thead>
-        <tbody>
           {data.length > 0 ? (
             data.map((el) => (
               <CrudTabledata
@@ -19,12 +12,8 @@ const Tables = ({ data}) => {
               />
             ))
           ) : (
-            <tr>
-              <td colSpan="3">Sin datos</td>
-            </tr>
+            <strong>Sin datos</strong>
           )}
-        </tbody>
-      </table>
     </div>
   );
 };

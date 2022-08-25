@@ -1,0 +1,18 @@
+.boton_cont{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    .boton_desing{
+        background: $borde;
+        color: $withe;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 25px !important;
+        text-align: center;
+        border: none;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        border-radius: 0px 0px 10px 0px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,154 @@
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    align-items: center;
+}
+.inicioper_cont{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    .inicioper_card{
+        background: $withe;
+        border-radius: 16px;
+        width: 85%;
+        filter: drop-shadow(0px 24px 64px rgba(0, 0, 0, 0.04));
+    }
+    .inicioper_body{
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width:900px) {
+            display: flex;
+            flex-direction: column;
+        }
+        .inicioper_image{
+            .Gryffindor{
+                background: linear-gradient(135deg, #FF0000 0%, #FED482 100%);
+                border-radius: 16px 0px 0px 16px;
+            }
+            .Slytherin{
+                background: linear-gradient(135deg, #1C792B 0%, #82E95E 100%);
+                border-radius: 16px 0px 0px 16px;
+            }
+            .Hufflepuff{
+                background: linear-gradient(135deg, #FFC700 0%, #FFF388 100%);
+                border-radius: 16px 0px 0px 16px;
+            }
+            .Ravenclaw{
+                border-radius: 16px 0px 0px 16px;
+                background: linear-gradient(135deg, #0597B7 0%, #66D1FF 100%);
+            }
+            @media screen and (max-width:900px) {
+                .Gryffindor{
+                    border-radius: 16px 16px 0px 0px;
+                }
+                .Slytherin{
+                     border-radius: 16px 16px 0px 0px;
+                }
+                .Hufflepuff{
+                     border-radius: 16px 16px 0px 0px;
+                }
+                .Ravenclaw{
+                     border-radius: 16px 16px 0px 0px;
+                }
+            }
+            img{
+                object-fit: cover;
+                display: block;
+                margin: auto;
+                padding: 2rem;
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+                @media screen and (max-width:900px) {
+                    width: 60px;
+                    height: 60px;
+                    display: block;
+                    margin: auto;
+                    padding: 1rem;
+                }
+            }
+        }
+        .inicioper_data{
+            padding: 1.2rem;
+            @media screen and (max-width:900px) {
+                display: grid;
+                padding: 1.1rem;
+            }
+            .inicioper_span{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 3px;
+                color: $status;
+                font-size: 14px;
+            }
+            .incioper_name{
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+                font-weight: 600;
+                line-height: 46px;
+                @media screen and (max-width:900px) {
+                    font-size: 1rem;
+                    line-height: 20px;
+                    text-align: center !important;
+                    order: -1 !important;
+                    margin-bottom: 1rem;
+                }
+            }
+            .inicioper_minidata{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                @media screen and (max-width:900px) {
+                    display: none !important;
+                }
+                .inicioper_datas{
+                    font-size: 14px;
+                    color: $minidata;
+                    line-height: 1.6rem;
+                    text-transform: capitalize;
+                    strong{
+                        color: $minidata;
+                        font-weight: 700 !important;
+                    }
+                }
+            }
+        }
+        .inicioper_if{
+            @media screen and (max-width:900px) {
+                    display: none !important;
+            }
+        }
+        .inicioper_mobile{
+            display: none !important;
+            @media screen and (max-width:900px) {
+                    display: block !important;
+                    .inicioper_spane{
+                        display: flex;
+                        flex-direction: row;
+                        text-align: inherit;
+                        padding: 0px;
+                        gap: 3px;
+                        color: $status;
+                        font-size: 14px;
+                    }
+            }
+        }
+    }
+    
+}
+.inicioper_imge{
+    display: block;
+    margin: auto;
+    margin-top: 5rem !important;
+    width: 20%;
+    height: 20%;
+    @media screen and (max-width:900px) {
+        margin-top:0rem !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}

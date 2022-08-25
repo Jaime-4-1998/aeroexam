@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(../images/795015748923ebbca600fbf2a4762271.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    object-fit: cover;
+    background-color:#000 !important;
+    @media screen and (max-width:900px) {
+      background: none !important;
+      background-color:#000 !important;
+    }
+}
+//setings
+@import './components/all';
+//componentes
+@import './components/modale';
+@import './components/boton';
+@import './components/logo';
+@import './components/inicioper';

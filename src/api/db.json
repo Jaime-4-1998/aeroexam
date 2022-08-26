@@ -1247,6 +1247,17 @@
       "actor": "David Bradley",
       "alive": true,
       "image": "http://hp-api.herokuapp.com/images/filch.jpg"
+    },
+    {
+      "id": 1661485102839,
+      "name": "Jaime",
+      "dateOfBirth": "2022-08-25",
+      "eyeColour": "Negros",
+      "hairColour": "Negros",
+      "gender": "male",
+      "hogwartsStudent": "true",
+      "hogwartsStaff": "",
+      "image": "https://i.pinimg.com/originals/a9/5f/13/a95f13edfb55240dd0d2ba1f21a8f796.jpg"
     }
   ]
 }

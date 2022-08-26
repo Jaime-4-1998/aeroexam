@@ -79,8 +79,8 @@ const Logo = ({ImgGan,ImgUser}) => {
         </div>
         <span>Selecciona tu filtro</span>
         <div className="logo_btns">
-                <Link to="/Jaime" className='logo_button'>Estudiantes</Link>
-                <Link to="/Jaime" className='logo_button'>Staff</Link>
+                <Link to="/Estudiantes" className='logo_button'>Estudiantes</Link>
+                <Link to="/Staff" className='logo_button'>Staff</Link>
         </div>
     </section>
     </>

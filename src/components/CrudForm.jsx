@@ -118,7 +118,7 @@ var initailForm = {};
             />
           </div>
         </div>
-        <input type="submit" value="Enviar" />
+        <input type="submit" value="Enviar" className="form_btn" />
       </form>
   );
 };

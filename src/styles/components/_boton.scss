@@ -2,6 +2,10 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 5rem;
+    @media screen and (max-width:900px) {
+        margin-right: 0rem !important;
+        justify-content:center;
+    }
     .boton_desing{
         background: $borde;
         color: $withe;
@@ -12,7 +16,13 @@
         border: none;
         padding: 0.5rem;
         text-transform: uppercase;
-        border-radius: 0px 0px 10px 0px;
+        border-radius: 0px 0px 10px 10px;
         cursor: pointer;
+        @media screen and (max-width:900px) {
+            position: absolute;
+            margin-top: 450rem; 
+            border-radius: 10px 10px 0px 0px !important;
+        }
     }
+    
 }

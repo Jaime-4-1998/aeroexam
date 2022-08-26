@@ -7,7 +7,6 @@ import Loader from "./Loader";
 import Message from "./Message";
 
 const InicioPer = () => {
-  //const [db, setDb] = useState(null);
   const [state, dispatch] = useReducer(crudReducer, crudInitialState);
   const { db } = state;
   const [error, setError] = useState(null);
@@ -21,11 +20,9 @@ const InicioPer = () => {
       .then((res) => {
         //console.log(res);
         if (!res.err) {
-          //setDb(res);
           dispatch({ type: TYPES.READ_ALL_DATA, payload: res });
           setError(null);
         } else {
-          //setDb(null);
           dispatch({ type: TYPES.NO_DATA });
           setError(res);
         }

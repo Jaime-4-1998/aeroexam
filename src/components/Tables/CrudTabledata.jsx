@@ -27,8 +27,14 @@ const CrudTabledata = ({ el }) => {
                                   } else if (hogwartsStudent === false && alive === false && hogwartsStaff === false) {
                                       return <span className='inicioper_span'> Finado / Persona </span>  ;
                                   }
+                                  else if (hogwartsStudent === "true" && hogwartsStaff === "") {
+                                    return <span className='inicioper_span'> Estudiante / Hogwarts</span>  ;
+                                  }
+                                  else if (hogwartsStudent === "" && hogwartsStaff === "true") {
+                                    return <span className='inicioper_span'> Staff / Hogwarts</span>  ;
+                                  }
                                   else {
-                                      return <span className='inicioper_span'> No Existe </span>  ;
+                                      return <span className='inicioper_span'> Guerrero </span>  ;
                                   }
                           })()}
                       </div>
@@ -85,8 +91,14 @@ const CrudTabledata = ({ el }) => {
                                   } else if (hogwartsStudent === false && alive === false && hogwartsStaff === false) {
                                       return <span className='inicioper_span'> Finado / Persona </span>  ;
                                   }
+                                  else if (hogwartsStudent === "true" && hogwartsStaff === "") {
+                                    return <span className='inicioper_span'> Estudiante / Hogwarts</span>  ;
+                                  }
+                                  else if (hogwartsStudent === "" && hogwartsStaff === "true") {
+                                    return <span className='inicioper_span'> Staff / Hogwarts</span>  ;
+                                  }
                                   else {
-                                      return <span className='inicioper_span'> No Existe </span>  ;
+                                      return <span className='inicioper_span'> Guerrero </span>  ;
                                   }
                           })()}
                       </div>

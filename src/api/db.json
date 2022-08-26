@@ -1247,21 +1247,6 @@
       "actor": "David Bradley",
       "alive": true,
       "image": "http://hp-api.herokuapp.com/images/filch.jpg"
-    },
-    {
-      "name": "fgf",
-      "constellation": "fgdfdf",
-      "id": 1661400206125
-    },
-    {
-      "name": "Jaime_Programador",
-      "constellation": "reacj",
-      "id": 1661400536675
-    },
-    {
-      "name": "ivan",
-      "constellation": "ivan",
-      "id": 1661400657121
     }
   ]
 }
